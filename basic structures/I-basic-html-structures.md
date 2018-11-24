@@ -3,7 +3,7 @@
 
 ![render example 1](resources/render_example_1.png)
 
-#### [ 0 ] - <span style="color:red">Red</span> box:
+#### [ 0 ] - Red box:
 
 ```html
 <!--
@@ -49,7 +49,7 @@ h2, p, a { color: white; }
 
 <hr>
 
-#### [ 1 ] - <span style="color:blue">Blue</span> box:
+#### [ 1 ] - Blue box:
 ```HTML
 <!-- Gives <div> an id "content" -->
 <div id="content">
@@ -150,4 +150,4 @@ h2, p, a { color: white; }
 
 <hr>
 
-#### [ 2 ] - Child <span style="color:green">border-right</span> inside [ 1 ] <span style="color:blue">blue</span> box:
+#### [ 2 ] - Child border-right inside [ 1 ] blue box:
