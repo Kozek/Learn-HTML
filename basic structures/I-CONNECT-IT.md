@@ -1,19 +1,22 @@
 # Basic HTML structures
-## Markup & Render
+## Example I - CONNECT-IT
 
-![render example 1](resources/render_example_1.png)
 
+Preview:
+![CONNECT-IT Preview](resources\connect-it-preview.png)
+
+
+HTML/CSS:
 #### [ 0 ] - Red box:
-
 ```html
-<!--
+<!--    [ 0 ]
    -    Gives <div> an id "header"
-   -    -> id used as #id, class used as .id in css
+   -    -> id used as #id, class used as .class in css
   -->
 <div id="header">
 
   <!--
-     -    Format text "CONNECT-IT" as <h1>
+     -    Format text >CONNECT-IT< as <h1>
      -    define <a> link with index.html as destination
     -->
   <h1><a href="index.html">CONNECT-IT</a></h1>
@@ -32,6 +35,7 @@ h1 a {
 /* Properties of all <h2>, <p>, <a> */
 h2, p, a { color: white; }
 
+/* [ 0 ] */
 #header {
   /* Working with percentage, responsive for beginners */
   height: 15%;
@@ -50,17 +54,23 @@ h2, p, a { color: white; }
 <hr>
 
 #### [ 1 ] - Blue box:
+##### [ 1.1 ] [ 1.2 ] [ 1.3 ] - Content inside [ 1 ] blue box:
+
 ```HTML
-<!-- Gives <div> an id "content" -->
+<!-- [ 1 ]
+   - Gives <div> an id "content"
+ -->
 <div id="content">
-  <!--
+  <!--    [ 1.1 ]
      -    Gives <div> an id "border-left"
      -    Properties like background set in css
    -->
   <div id="border-left">
   </div>
 
-  <!-- Gives <div> an id "main" -->
+  <!--    [ 1.2 ]
+     -    Gives <div> an id "main"
+    -->
   <div id="main">
     <!-- Some text, better than lorem ipsum -->
     <h2>Internetshop bald verfügbar!</h2>
@@ -70,8 +80,12 @@ h2, p, a { color: white; }
        -  doesn't work with images
      -->
     <center>
+      <!-- [1.2.1] -->
     <div id="article">
-      <!-- Embedd image, alt text appears when image's missing -->
+      <!--
+         - Embedd image, alt text appears when image's missing
+         - src="path/to/file" -> in current directory -> img folder -> artikelX.png
+       -->
       <img alt="Bild 1" src="img/artikel1.jpg"/>
       <img alt="Bild 2" src="img/artikel2.jpg"/>
       <img alt="Bild 3" src="img/artikel3.jpg"/>
@@ -85,19 +99,23 @@ h2, p, a { color: white; }
 
   </div>
 
-  <!-- Same as border-left -->
+  <!--    [ 1.3 ]
+     -    Same as border-left
+   -->
   <div id="border-right">
   </div>
 </div>
 ```
 
 ```CSS
+/* [ 1 ] */
 #content {
   /* Keep the 15% of header in mind, makes 15% left */
   height: 70%;
   width: 100%;
 }
 
+/* [ 1.1 ] */
 #border-left {
   /* Now full height, corresponding to those 70% */
   height: 100%;
@@ -105,7 +123,11 @@ h2, p, a { color: white; }
   width: 20%;
   /* Makes position dynamic*/
   position: relative;
-  /* Background properties */
+  /*
+   * url("path/to/file") - currently in css folder
+   * css -< index -> img -> border-left.jpg
+   * -< backwards, -> forwards
+   */
   background-image: url("../img/border-left.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -113,6 +135,7 @@ h2, p, a { color: white; }
   float: left;
 }
 
+/* [ 1.2 ] */
 #main {
   height: 100%;
   width: 60%;
@@ -137,6 +160,7 @@ h2, p, a { color: white; }
   padding: 3 3 3 3;
 }
 
+/* [ 1.3 ] */
 #border-right {
   height: 100%;
   width: 20%;
@@ -150,4 +174,26 @@ h2, p, a { color: white; }
 
 <hr>
 
-#### [ 2 ] - Child border-right inside [ 1 ] blue box:
+#### [ 2 ] - Brown box:
+
+```HTML
+<div id="footer">
+  <a href="impressum.html">Impressum</a>
+</div>
+```
+
+```CSS
+#footer {
+  height: 15%;
+  width: 100%;
+  text-align: left;
+}
+
+#footer a {
+  margin-left: 1em;
+}
+```
+
+<hr>
+
+[Source]()
