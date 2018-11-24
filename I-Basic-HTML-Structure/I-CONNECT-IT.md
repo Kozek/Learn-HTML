@@ -1,28 +1,30 @@
 # Basic HTML structures
-## Example I - CONNECT-IT
+## I - CONNECT-IT
 
 
 Preview:
 ![render example 1](resources/connect-it-preview.png)
 
 
-HTML/CSS:
 #### [ 0 ] - Red box:
 ```html
 <!--    [ 0 ]
    -    Gives <div> an id "header"
    -    -> id used as #id, class used as .class in css
-  -->
+   -->
 <div id="header">
 
   <!--
      -    Format text >CONNECT-IT< as <h1>
      -    define <a> link with index.html as destination
-    -->
+     -->
   <h1><a href="index.html">CONNECT-IT</a></h1>
 
   <!-- Closing the <div id="header"> tag -->
 </div>
+
+<!-- thematic break -->
+<hr>
 ```
 
 ```css
@@ -59,18 +61,18 @@ h2, p, a { color: white; }
 ```HTML
 <!-- [ 1 ]
    - Gives <div> an id "content"
- -->
+   -->
 <div id="content">
   <!--    [ 1.1 ]
      -    Gives <div> an id "border-left"
      -    Properties like background set in css
-   -->
+     -->
   <div id="border-left">
   </div>
 
   <!--    [ 1.2 ]
      -    Gives <div> an id "main"
-    -->
+     -->
   <div id="main">
     <!-- Some text, better than lorem ipsum -->
     <h2>Internetshop bald verfügbar!</h2>
@@ -78,14 +80,14 @@ h2, p, a { color: white; }
 
     <!--  CSS Propertie text-align: center;
        -  doesn't work with images
-     -->
+       -->
     <center>
       <!-- [1.2.1] -->
     <div id="article">
       <!--
          - Embedd image, alt text appears when image's missing
          - src="path/to/file" -> in current directory -> img folder -> artikelX.png
-       -->
+         -->
       <img alt="Bild 1" src="img/artikel1.jpg"/>
       <img alt="Bild 2" src="img/artikel2.jpg"/>
       <img alt="Bild 3" src="img/artikel3.jpg"/>
@@ -101,7 +103,7 @@ h2, p, a { color: white; }
 
   <!--    [ 1.3 ]
      -    Same as border-left
-   -->
+     -->
   <div id="border-right">
   </div>
 </div>
@@ -177,9 +179,12 @@ h2, p, a { color: white; }
 #### [ 2 ] - Brown box:
 
 ```HTML
+<hr>
+
 <div id="footer">
   <a href="impressum.html">Impressum</a>
 </div>
+
 ```
 
 ```CSS
@@ -196,4 +201,4 @@ h2, p, a { color: white; }
 
 <hr>
 
-[Source]()
+[Source](./sources/I-CONNECT-IT/)
