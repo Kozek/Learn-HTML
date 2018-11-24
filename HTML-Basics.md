@@ -1,5 +1,4 @@
-# Basic
-## HTML basics
+# HTML basics
 
 ## Introduction
 HTML stands for ```Hypertext-Markup-Language```.
