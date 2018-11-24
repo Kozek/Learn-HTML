@@ -3,7 +3,7 @@
 
 
 Preview:
-![render example 1](resources/render_example_1.png)
+![render example 1](resources/connect-it-preview.png)
 
 
 HTML/CSS:
