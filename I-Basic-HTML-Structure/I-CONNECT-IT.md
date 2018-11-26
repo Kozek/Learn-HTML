@@ -15,8 +15,8 @@ Preview:
 <div id="header">
 
   <!--
-     -    Format text >CONNECT-IT< as <h1>
-     -    define <a> link with index.html as destination
+     -    Format CONNECT-IT as <h1>
+     -    define encapsulated link <a> with index.html as destination
      -->
   <h1><a href="index.html">CONNECT-IT</a></h1>
 
@@ -28,13 +28,13 @@ Preview:
 ```
 
 ```css
-/* Properties child-tag <a> from <h1> */
+/* Properties of child-tag <a> encapsulated in <h1> */
 h1 a {
   color: orange;
   font-size: 2em;
 }
 
-/* Properties of all <h2>, <p>, <a> */
+/* Properties of all <h2>, <p>, <a> tags inside HTML file */
 h2, p, a { color: white; }
 
 /* [ 0 ] */
@@ -47,6 +47,10 @@ h2, p, a { color: white; }
   justify-content: center;
 }
 
+/*
+ *    Properties of child-tag <a> encapsulated in <div id="header">
+ *    Could be replaced with propertie set inside h1 a {}
+ */
 #header a {
   /* Removes link decoration, e.g. underlined text */
   text-decoration: none;
@@ -96,9 +100,10 @@ h2, p, a { color: white; }
       <img alt="Bild 6" src="img/artikel6.jpg"/>
       <img alt="Bild 7" src="img/artikel7.jpg"/>
       <img alt="Bild 8" src="img/artikel8.jpg"/>
+    <!-- Closing <div id="article"> -->
     </div>
     </center>
-
+  <!-- Closing <div id="main"> -->
   </div>
 
   <!--    [ 1.3 ]
@@ -106,6 +111,7 @@ h2, p, a { color: white; }
      -->
   <div id="border-right">
   </div>
+<!-- Closing <div id="content"> -->
 </div>
 ```
 
@@ -119,11 +125,11 @@ h2, p, a { color: white; }
 
 /* [ 1.1 ] */
 #border-left {
-  /* Now full height, corresponding to those 70% */
+  /* Now full height, corresponding to 70% height of content */
   height: 100%;
   /* Split it in 3 rows, border-right 20%, 60% for main and last 20% for border-right */
   width: 20%;
-  /* Makes position dynamic*/
+  /* Align element to itself */
   position: relative;
   /*
    * url("path/to/file") - currently in css folder
@@ -143,13 +149,13 @@ h2, p, a { color: white; }
   width: 60%;
   position: relative;
   float: left;
-  /* doesn't work with images */
+  /* Doesn't work with images, explains <center> tag in HTML file */
   text-align: center;
 }
 
 #article {
   width: 50%;
-  /* Using grid instead of tables in html*/
+  /* Using grid instead of tables in HTML */
   position: grid;
   border-style: solid;
   border-width: medium;

@@ -3,14 +3,14 @@
 ## Introduction
 HTML stands for ```Hypertext-Markup-Language```.
 
-Same principle in editors with highlighting e.g. bold, font size, color:
-Plain text is highlighted with special **surrounding tags** in source e.g. ```<b> </b>``` (bold), ```<h1> </h1>``` (headline, font & size).
+Same principle in editors with highlighting e.g. bold, font size, color:  
+Plain text is highlighted with special **surrounding tags** in source e.g. ```<b> </b>``` (bold), ```<h1> </h1>``` (headline).
 
 Ending of an tag is defined with ```</tag>```. Some tags can be directly closed e.g. ```<meta charset="utf-8"/>```
 
-Browsers render the page depending on ```HTML/CSS``` source.
+Browsers render the website depending on ```HTML/CSS``` source.
 
-**Note:** ``` <tags> </tags>``` should be used in tree structures for encapsulated relationships and properties.
+**Note:** ```<tags> </tags>``` should be used in tree structures for encapsulated relationships and properties.
 
 **Example:**
 
@@ -26,6 +26,8 @@ Browsers render the page depending on ```HTML/CSS``` source.
 |  </body>
 </html>
 ```
+
+<hr>
 
 ```HTML
 <!-- Tag usage -->
